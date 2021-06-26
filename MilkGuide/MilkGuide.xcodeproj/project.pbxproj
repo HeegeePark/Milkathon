@@ -25,6 +25,7 @@
 		4F374D6126872197007BA65C /* ImageClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F374D6026872197007BA65C /* ImageClassificationViewController.swift */; };
 		4F374D6326872392007BA65C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F374D6226872392007BA65C /* ResultViewController.swift */; };
 		4F374D6526872FF7007BA65C /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F374D6426872FF7007BA65C /* CGImagePropertyOrientation.swift */; };
+		4F65919026877B280029C793 /* ClassificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F65918F26877B280029C793 /* ClassificationInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		4F374D6026872197007BA65C /* ImageClassificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationViewController.swift; sourceTree = "<group>"; };
 		4F374D6226872392007BA65C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		4F374D6426872FF7007BA65C /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
+		4F65918F26877B280029C793 /* ClassificationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				4F374D6226872392007BA65C /* ResultViewController.swift */,
 				4F374D5E26871BF8007BA65C /* MilkClassifier.mlmodel */,
 				4F374D6426872FF7007BA65C /* CGImagePropertyOrientation.swift */,
+				4F65918F26877B280029C793 /* ClassificationInfo.swift */,
 			);
 			path = MilkDetector;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				4F037DBF2686C13700CC2E0A /* MainTabBarController.swift in Sources */,
 				4F374D6526872FF7007BA65C /* CGImagePropertyOrientation.swift in Sources */,
 				4F037D8B2686AC6300CC2E0A /* SceneDelegate.swift in Sources */,
+				4F65919026877B280029C793 /* ClassificationInfo.swift in Sources */,
 				4F374D572686C9D1007BA65C /* PreviewView.swift in Sources */,
 				4F374D6326872392007BA65C /* ResultViewController.swift in Sources */,
 			);

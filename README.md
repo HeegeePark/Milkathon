@@ -52,8 +52,8 @@
 **희지**
 
 - [x] AVVideoCapture를 이용하여 카메라 구현
-- [ ] 촬영한 이미지 mlmodel input으로 넣어 predict
-- [ ] 모델 ouput 뷰에 띄우기 
+- [x] 촬영한 이미지 mlmodel input으로 넣어 predict
+- [x] 모델 ouput 뷰에 띄우기 
 
 ## 7. 협업을 위해 사용할 툴
 

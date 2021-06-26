@@ -19,6 +19,7 @@ class ImageClassificationViewController: UIViewController {
     4 : 흰우유
     */
     var image: UIImage?
+    var result: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +44,7 @@ class ImageClassificationViewController: UIViewController {
     
     /// - Tag: PerformRequests
     func updateClassifications(for image: UIImage) {
+        self.image = image
         let orientation = CGImagePropertyOrientation(image.imageOrientation)
         guard let ciImage = CIImage(image: image) else { fatalError("Unable to create \(CIImage.self) form \(image)") }
         
@@ -59,41 +61,40 @@ class ImageClassificationViewController: UIViewController {
     /// update UI with the results of the classification.
     /// - Tag: ProcessClassification
     func processClassifications(for request: VNRequest, error: Error?) {
-        
-        
         DispatchQueue.main.async {
             let resultVC = self.storyboard?.instantiateViewController(identifier: "ResultViewController") as! ResultViewController
             guard let results = request.results else {
-                resultVC.resultLabel.text = "분류 불가"
+                self.result = "분류 불가"
                 self.present(resultVC, animated: false, completion: nil)
                 return
             }
-            print("-------------결과------------\(results)")
             let classifications = results as! [VNCoreMLFeatureValueObservation]
             
             if classifications.isEmpty {
-                resultVC.resultLabel.text = "알 수 없음"
+                self.result = "알 수 없음"
             } else {
                 let topClassification = classifications.prefix(1)
-                let result = Int(topClassification[0].featureName)!
+                let max = Int(topClassification[0].featureName)!
                 
-                switch result {
+                switch max {
                 case 0:
-                    resultVC.resultLabel.text = "딸기우유"
+                    self.result = "딸기우유"
                 case 1:
-                    resultVC.resultLabel.text = "바나나우유"
+                    self.result = "바나나우유"
                 case 2:
-                    resultVC.resultLabel.text = "초코우유"
+                    self.result = "초코우유"
                 case 3:
-                    resultVC.resultLabel.text = "커피우유"
+                    self.result = "커피우유"
                 case 4:
-                    resultVC.resultLabel.text = "흰우유"
+                    self.result = "흰우유"
                 default:
-                    resultVC.resultLabel.text = "이상한 우유"
+                    self.result = "우유 아님"
                 }
             }
-            resultVC.imageView.image = self.image
+            let classificationInfo = ClassificationInfo(image: self.image!, result: self.result)
+            resultVC.viewModel.update(model: classificationInfo)
             resultVC.modalPresentationStyle = .fullScreen
+            
             self.present(resultVC, animated: false, completion: nil)
             
         }

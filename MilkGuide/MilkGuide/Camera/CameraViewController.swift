@@ -189,7 +189,6 @@ extension CameraViewController: AVCapturePhotoCaptureDelegate {
         
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let imageClassificationVC = sb.instantiateViewController(identifier: "ImageClassificationViewController") as! ImageClassificationViewController
-        imageClassificationVC.image = image
         imageClassificationVC.updateClassifications(for: image)
         imageClassificationVC.modalPresentationStyle = .fullScreen
         present(imageClassificationVC, animated: false, completion: nil)

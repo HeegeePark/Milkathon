@@ -21,6 +21,10 @@
 		4F374D532686C505007BA65C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F374D522686C505007BA65C /* CameraViewController.swift */; };
 		4F374D572686C9D1007BA65C /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F374D562686C9D1007BA65C /* PreviewView.swift */; };
 		4F374D5B26870520007BA65C /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F374D5A26870520007BA65C /* Camera.storyboard */; };
+		4F374D5F26871BF8007BA65C /* MilkClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4F374D5E26871BF8007BA65C /* MilkClassifier.mlmodel */; };
+		4F374D6126872197007BA65C /* ImageClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F374D6026872197007BA65C /* ImageClassificationViewController.swift */; };
+		4F374D6326872392007BA65C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F374D6226872392007BA65C /* ResultViewController.swift */; };
+		4F374D6526872FF7007BA65C /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F374D6426872FF7007BA65C /* CGImagePropertyOrientation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		4F374D522686C505007BA65C /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		4F374D562686C9D1007BA65C /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		4F374D5A26870520007BA65C /* Camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
+		4F374D5E26871BF8007BA65C /* MilkClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MilkClassifier.mlmodel; sourceTree = "<group>"; };
+		4F374D6026872197007BA65C /* ImageClassificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationViewController.swift; sourceTree = "<group>"; };
+		4F374D6226872392007BA65C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		4F374D6426872FF7007BA65C /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +165,10 @@
 			children = (
 				4F037D8E2686AC6300CC2E0A /* Main.storyboard */,
 				4F037D8C2686AC6300CC2E0A /* MilkDetectorViewController.swift */,
+				4F374D6026872197007BA65C /* ImageClassificationViewController.swift */,
+				4F374D6226872392007BA65C /* ResultViewController.swift */,
+				4F374D5E26871BF8007BA65C /* MilkClassifier.mlmodel */,
+				4F374D6426872FF7007BA65C /* CGImagePropertyOrientation.swift */,
 			);
 			path = MilkDetector;
 			sourceTree = "<group>";
@@ -164,9 +176,9 @@
 		4F374D552686C9A9007BA65C /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				4F374D5A26870520007BA65C /* Camera.storyboard */,
 				4F374D522686C505007BA65C /* CameraViewController.swift */,
 				4F374D562686C9D1007BA65C /* PreviewView.swift */,
-				4F374D5A26870520007BA65C /* Camera.storyboard */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -304,12 +316,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F374D6126872197007BA65C /* ImageClassificationViewController.swift in Sources */,
+				4F374D5F26871BF8007BA65C /* MilkClassifier.mlmodel in Sources */,
 				4F037D8D2686AC6300CC2E0A /* MilkDetectorViewController.swift in Sources */,
 				4F374D532686C505007BA65C /* CameraViewController.swift in Sources */,
 				4F037D892686AC6300CC2E0A /* AppDelegate.swift in Sources */,
 				4F037DBF2686C13700CC2E0A /* MainTabBarController.swift in Sources */,
+				4F374D6526872FF7007BA65C /* CGImagePropertyOrientation.swift in Sources */,
 				4F037D8B2686AC6300CC2E0A /* SceneDelegate.swift in Sources */,
 				4F374D572686C9D1007BA65C /* PreviewView.swift in Sources */,
+				4F374D6326872392007BA65C /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +431,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -470,7 +486,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

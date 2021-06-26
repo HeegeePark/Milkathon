@@ -69,14 +69,13 @@ class ImageClassificationViewController: UIViewController {
                 return
             }
             print("-------------결과------------\(results)")
-            let classifications = results as! [VNClassificationObservation]
+            let classifications = results as! [VNCoreMLFeatureValueObservation]
             
             if classifications.isEmpty {
                 resultVC.resultLabel.text = "알 수 없음"
             } else {
-//                let topClassification = classifications.prefix(1)
                 let topClassification = classifications.prefix(1)
-                let result = Int(topClassification[0].identifier)!
+                let result = Int(topClassification[0].featureName)!
                 
                 switch result {
                 case 0:

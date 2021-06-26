@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4F037D892686AC6300CC2E0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F037D882686AC6300CC2E0A /* AppDelegate.swift */; };
 		4F037D8B2686AC6300CC2E0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F037D8A2686AC6300CC2E0A /* SceneDelegate.swift */; };
-		4F037D8D2686AC6300CC2E0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F037D8C2686AC6300CC2E0A /* ViewController.swift */; };
+		4F037D8D2686AC6300CC2E0A /* MilkDetectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F037D8C2686AC6300CC2E0A /* MilkDetectorViewController.swift */; };
 		4F037D902686AC6300CC2E0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F037D8E2686AC6300CC2E0A /* Main.storyboard */; };
 		4F037D922686AC6400CC2E0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F037D912686AC6400CC2E0A /* Assets.xcassets */; };
 		4F037D952686AC6400CC2E0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F037D932686AC6400CC2E0A /* LaunchScreen.storyboard */; };
@@ -17,6 +17,10 @@
 		4F037DAB2686AC6400CC2E0A /* MilkGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F037DAA2686AC6400CC2E0A /* MilkGuideUITests.swift */; };
 		4F037DBB2686AEFB00CC2E0A /* BMYEONSUNG_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F037DB92686AEFB00CC2E0A /* BMYEONSUNG_otf.otf */; };
 		4F037DBC2686AEFB00CC2E0A /* BMEULJIRO.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F037DBA2686AEFB00CC2E0A /* BMEULJIRO.otf */; };
+		4F037DBF2686C13700CC2E0A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F037DBE2686C13700CC2E0A /* MainTabBarController.swift */; };
+		4F374D532686C505007BA65C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F374D522686C505007BA65C /* CameraViewController.swift */; };
+		4F374D572686C9D1007BA65C /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F374D562686C9D1007BA65C /* PreviewView.swift */; };
+		4F374D5B26870520007BA65C /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F374D5A26870520007BA65C /* Camera.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +44,7 @@
 		4F037D852686AC6300CC2E0A /* MilkGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MilkGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F037D882686AC6300CC2E0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F037D8A2686AC6300CC2E0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4F037D8C2686AC6300CC2E0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4F037D8C2686AC6300CC2E0A /* MilkDetectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkDetectorViewController.swift; sourceTree = "<group>"; };
 		4F037D8F2686AC6300CC2E0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F037D912686AC6400CC2E0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F037D942686AC6400CC2E0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +57,10 @@
 		4F037DAC2686AC6400CC2E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F037DB92686AEFB00CC2E0A /* BMYEONSUNG_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMYEONSUNG_otf.otf; sourceTree = "<group>"; };
 		4F037DBA2686AEFB00CC2E0A /* BMEULJIRO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMEULJIRO.otf; sourceTree = "<group>"; };
+		4F037DBE2686C13700CC2E0A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		4F374D522686C505007BA65C /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		4F374D562686C9D1007BA65C /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		4F374D5A26870520007BA65C /* Camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +112,14 @@
 			isa = PBXGroup;
 			children = (
 				4F037DBD2686B08B00CC2E0A /* MilkDetector */,
+				4F374D552686C9A9007BA65C /* Camera */,
 				4F037D882686AC6300CC2E0A /* AppDelegate.swift */,
 				4F037D8A2686AC6300CC2E0A /* SceneDelegate.swift */,
 				4F037D962686AC6400CC2E0A /* Info.plist */,
 				4F037DB82686AEFB00CC2E0A /* Font */,
 				4F037D912686AC6400CC2E0A /* Assets.xcassets */,
 				4F037D932686AC6400CC2E0A /* LaunchScreen.storyboard */,
+				4F037DBE2686C13700CC2E0A /* MainTabBarController.swift */,
 			);
 			path = MilkGuide;
 			sourceTree = "<group>";
@@ -146,9 +156,19 @@
 			isa = PBXGroup;
 			children = (
 				4F037D8E2686AC6300CC2E0A /* Main.storyboard */,
-				4F037D8C2686AC6300CC2E0A /* ViewController.swift */,
+				4F037D8C2686AC6300CC2E0A /* MilkDetectorViewController.swift */,
 			);
 			path = MilkDetector;
+			sourceTree = "<group>";
+		};
+		4F374D552686C9A9007BA65C /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				4F374D522686C505007BA65C /* CameraViewController.swift */,
+				4F374D562686C9D1007BA65C /* PreviewView.swift */,
+				4F374D5A26870520007BA65C /* Camera.storyboard */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F037DBB2686AEFB00CC2E0A /* BMYEONSUNG_otf.otf in Resources */,
+				4F374D5B26870520007BA65C /* Camera.storyboard in Resources */,
 				4F037D952686AC6400CC2E0A /* LaunchScreen.storyboard in Resources */,
 				4F037DBC2686AEFB00CC2E0A /* BMEULJIRO.otf in Resources */,
 				4F037D922686AC6400CC2E0A /* Assets.xcassets in Resources */,
@@ -283,9 +304,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F037D8D2686AC6300CC2E0A /* ViewController.swift in Sources */,
+				4F037D8D2686AC6300CC2E0A /* MilkDetectorViewController.swift in Sources */,
+				4F374D532686C505007BA65C /* CameraViewController.swift in Sources */,
 				4F037D892686AC6300CC2E0A /* AppDelegate.swift in Sources */,
+				4F037DBF2686C13700CC2E0A /* MainTabBarController.swift in Sources */,
 				4F037D8B2686AC6300CC2E0A /* SceneDelegate.swift in Sources */,
+				4F374D572686C9D1007BA65C /* PreviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

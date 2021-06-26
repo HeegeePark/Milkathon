@@ -186,6 +186,14 @@ extension CameraViewController: AVCapturePhotoCaptureDelegate {
         guard let imageData = photo.fileDataRepresentation() else { return }
         // 이미지 라이브러리에 저장
         guard let image = UIImage(data: imageData) else { return }
-        self.savePhotoLibrary(image: image)
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let imageClassificationVC = sb.instantiateViewController(identifier: "ImageClassificationViewController") as! ImageClassificationViewController
+        imageClassificationVC.image = image
+        imageClassificationVC.updateClassifications(for: image)
+        imageClassificationVC.modalPresentationStyle = .fullScreen
+        present(imageClassificationVC, animated: false, completion: nil)
+       
+        
     }
 }

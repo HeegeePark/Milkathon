@@ -64,7 +64,9 @@
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>MilkGuide는 우유를 찍기 위해 카메라를 사용합니다.</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string></string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>THEHongchaLefthand.ttf</string>
+	</array>
 </dict>
 </plist>

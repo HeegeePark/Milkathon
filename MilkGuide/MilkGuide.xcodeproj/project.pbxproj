@@ -25,6 +25,7 @@
 		4F374D6126872197007BA65C /* ImageClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F374D6026872197007BA65C /* ImageClassificationViewController.swift */; };
 		4F374D6326872392007BA65C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F374D6226872392007BA65C /* ResultViewController.swift */; };
 		4F374D6526872FF7007BA65C /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F374D6426872FF7007BA65C /* CGImagePropertyOrientation.swift */; };
+		4F45C5DE268A158E004706A8 /* THEHongchaLefthand.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FFF8429268A068000993E2D /* THEHongchaLefthand.ttf */; };
 		4F65919026877B280029C793 /* ClassificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F65918F26877B280029C793 /* ClassificationInfo.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,8 +61,8 @@
 		4F037DA62686AC6400CC2E0A /* MilkGuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MilkGuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F037DAA2686AC6400CC2E0A /* MilkGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkGuideUITests.swift; sourceTree = "<group>"; };
 		4F037DAC2686AC6400CC2E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4F037DB92686AEFB00CC2E0A /* BMYEONSUNG_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMYEONSUNG_otf.otf; sourceTree = "<group>"; };
-		4F037DBA2686AEFB00CC2E0A /* BMEULJIRO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMEULJIRO.otf; sourceTree = "<group>"; };
+		4F037DB92686AEFB00CC2E0A /* BMYEONSUNG_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BMYEONSUNG_otf.otf; path = ../../../Milkathon/MilkGuide/MilkGuide/Font/BMYEONSUNG_otf.otf; sourceTree = "<group>"; };
+		4F037DBA2686AEFB00CC2E0A /* BMEULJIRO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BMEULJIRO.otf; path = ../../../Milkathon/MilkGuide/MilkGuide/Font/BMEULJIRO.otf; sourceTree = "<group>"; };
 		4F037DBE2686C13700CC2E0A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		4F374D522686C505007BA65C /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		4F374D562686C9D1007BA65C /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 		4F374D6226872392007BA65C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		4F374D6426872FF7007BA65C /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
 		4F65918F26877B280029C793 /* ClassificationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationInfo.swift; sourceTree = "<group>"; };
+		4FFF8429268A068000993E2D /* THEHongchaLefthand.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = THEHongchaLefthand.ttf; path = ../../../Milkathon/MilkGuide/MilkGuide/Font/THEHongchaLefthand.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 			children = (
 				4F037DB92686AEFB00CC2E0A /* BMYEONSUNG_otf.otf */,
 				4F037DBA2686AEFB00CC2E0A /* BMEULJIRO.otf */,
+				4FFF8429268A068000993E2D /* THEHongchaLefthand.ttf */,
 			);
 			name = Font;
 			path = ../../../whatislife/EggBoilingTimer/Font;
@@ -291,6 +294,7 @@
 			files = (
 				4F037DBB2686AEFB00CC2E0A /* BMYEONSUNG_otf.otf in Resources */,
 				4F374D5B26870520007BA65C /* Camera.storyboard in Resources */,
+				4F45C5DE268A158E004706A8 /* THEHongchaLefthand.ttf in Resources */,
 				4F037D952686AC6400CC2E0A /* LaunchScreen.storyboard in Resources */,
 				4F037DBC2686AEFB00CC2E0A /* BMEULJIRO.otf in Resources */,
 				4F037D922686AC6400CC2E0A /* Assets.xcassets in Resources */,

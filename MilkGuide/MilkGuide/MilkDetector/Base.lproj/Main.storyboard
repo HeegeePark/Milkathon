@@ -12,8 +12,8 @@
         <array key="BMEULJIRO.otf">
             <string>BMEULJIRO</string>
         </array>
-        <array key="BMYEONSUNG_otf.otf">
-            <string>BMYEONSUNG-OTF</string>
+        <array key="THEHongchaLeftHand.ttf">
+            <string>THEHongchaLefthand</string>
         </array>
     </customFonts>
     <scenes>
@@ -32,7 +32,7 @@
                                     <constraint firstAttribute="width" constant="182" id="pAj-qz-MjW"/>
                                     <constraint firstAttribute="height" constant="66" id="rOz-4P-VOm"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="BMEULJIRO" family="BM EULJIRO" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="THEHongchaLefthand" family="THEHongcha Lefthand" pointSize="24"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="사진 찍기"/>
                                 <connections>
@@ -81,7 +81,7 @@
                                     <constraint firstAttribute="width" constant="200" id="dSS-cP-rCa"/>
                                     <constraint firstAttribute="height" constant="80" id="flS-ZV-GIh"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="BMEULJIRO" family="BM EULJIRO" pointSize="70"/>
+                                <fontDescription key="fontDescription" name="THEHongchaLefthand" family="THEHongcha Lefthand" pointSize="70"/>
                                 <color key="textColor" red="0.42223021389999998" green="0.2097753882" blue="0.023445226249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="highlightedColor" systemColor="systemBlueColor"/>
                             </label>
@@ -130,7 +130,7 @@
                                     <constraint firstAttribute="height" constant="66" id="EJ9-yF-M9O"/>
                                     <constraint firstAttribute="width" constant="182" id="NqO-gt-Few"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="BMEULJIRO" family="BM EULJIRO" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="THEHongchaLefthand" family="THEHongcha Lefthand" pointSize="24"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="메인 화면으로"/>
                                 <connections>
@@ -139,11 +139,11 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="바나나우유" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QwV-Fc-bzF">
-                                <rect key="frame" x="106" y="441" width="178" height="60"/>
+                                <rect key="frame" x="108.33333333333333" y="441" width="173.66666666666669" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="j0k-ba-RON"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="BMYEONSUNG-OTF" family="BM YEONSUNG OTF" pointSize="50"/>
+                                <fontDescription key="fontDescription" name="THEHongchaLefthand" family="THEHongcha Lefthand" pointSize="50"/>
                                 <color key="textColor" red="0.42223021389999998" green="0.2097753882" blue="0.023445226249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>

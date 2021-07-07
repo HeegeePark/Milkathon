@@ -30,7 +30,7 @@ class ImageClassificationViewController: UIViewController {
     /// - Tag: MLModelSetup
     lazy var classificationRequest: VNCoreMLRequest = {
         do {
-            let model = try VNCoreMLModel(for: MilkClassifier().model)
+            let model = try VNCoreMLModel(for: milk_1().model)
             
             let request = VNCoreMLRequest(model: model, completionHandler: { [weak self] request, error in
                 self?.processClassifications(for: request, error: error)
@@ -68,24 +68,24 @@ class ImageClassificationViewController: UIViewController {
                 self.present(resultVC, animated: false, completion: nil)
                 return
             }
-            let classifications = results as! [VNCoreMLFeatureValueObservation]
-            
+            let classifications = results as! [VNClassificationObservation]
             if classifications.isEmpty {
                 self.result = "알 수 없음"
             } else {
                 let topClassification = classifications.prefix(1)
-                let max = Int(topClassification[0].featureName)!
-                
-                switch max {
-                case 0:
+//                print(classifications.description)
+//                print(topClassification)
+                let prediction = topClassification.first?.identifier
+                switch prediction {
+                case "0":
                     self.result = "딸기우유"
-                case 1:
+                case "1":
                     self.result = "바나나우유"
-                case 2:
+                case "2":
                     self.result = "초코우유"
-                case 3:
+                case "3":
                     self.result = "커피우유"
-                case 4:
+                case "4":
                     self.result = "흰우유"
                 default:
                     self.result = "우유 아님"

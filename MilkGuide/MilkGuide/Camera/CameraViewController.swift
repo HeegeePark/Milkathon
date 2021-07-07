@@ -12,7 +12,12 @@ import Photos
 class CameraViewController: UIViewController {
     let captureSession = AVCaptureSession()
     var videoDeviceInput: AVCaptureDeviceInput! // 전∙후면 변경 가능
-    let photoOutput = AVCapturePhotoOutput()
+    var photoOutput: AVCapturePhotoOutput = {
+        let output = AVCapturePhotoOutput()
+        // 고해상도 캡처 가능하게
+        output.isHighResolutionCaptureEnabled = true
+        return output
+    }()
     
     let sessionQueue = DispatchQueue(label: "session Queue")
     let videoDeviceDiscoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInDualCamera, .builtInWideAngleCamera, .builtInTrueDepthCamera], mediaType: .video, position: .unspecified)
@@ -127,7 +132,7 @@ extension CameraViewController {
         // 4. Add Photo Output
         // 5. commitConfiguration
         
-        captureSession.sessionPreset = .photo   // 해상도 설정
+        captureSession.sessionPreset = .high   // 해상도 설정
         captureSession.beginConfiguration()
         
         // add video input

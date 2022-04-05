@@ -10,6 +10,7 @@ import AVFoundation
 
 class MilkDetectorViewController: UIViewController {
     @IBOutlet weak var cameraButton: UIButton!
+    @IBOutlet weak var milkImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

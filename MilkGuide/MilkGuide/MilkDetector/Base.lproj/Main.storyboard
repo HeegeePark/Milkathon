@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L21-ai-Z4R">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L21-ai-Z4R">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -42,16 +42,16 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="img_milkguide" translatesAutoresizingMaskIntoConstraints="NO" id="NOp-Mf-7Gx">
                                 <rect key="frame" x="16" y="221" width="345" height="345"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="345" id="9uj-60-sc8"/>
-                                    <constraint firstAttribute="width" constant="345" id="EUg-d6-eNp"/>
+                                    <constraint firstAttribute="width" constant="345" id="fX9-9J-R3w"/>
+                                    <constraint firstAttribute="width" secondItem="NOp-Mf-7Gx" secondAttribute="height" multiplier="1:1" id="zCj-rk-0nC"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.9995927215" green="0.97318893669999995" blue="0.93332856890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="NOp-Mf-7Gx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="3df-Tl-fd2"/>
-                            <constraint firstItem="NOp-Mf-7Gx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GTO-YR-GdU"/>
+                            <constraint firstItem="NOp-Mf-7Gx" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="9yD-GW-LzX"/>
+                            <constraint firstItem="NOp-Mf-7Gx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="c77-hg-Yqu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ofU-sR-Cj0" secondAttribute="bottom" constant="70" id="jm0-fo-W3W"/>
                             <constraint firstItem="ofU-sR-Cj0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lCC-nm-KQs"/>
                         </constraints>
@@ -59,6 +59,7 @@
                     <tabBarItem key="tabBarItem" title="우유 찾기" image="magnifyingglass" catalog="system" id="MHK-MV-Sfb"/>
                     <connections>
                         <outlet property="cameraButton" destination="ofU-sR-Cj0" id="Fps-dc-1Uh"/>
+                        <outlet property="milkImageView" destination="NOp-Mf-7Gx" id="gvY-KN-fGC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

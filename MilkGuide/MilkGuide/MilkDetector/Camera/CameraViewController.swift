@@ -10,6 +10,7 @@ import AVFoundation
 import Photos
 
 class CameraViewController: UIViewController {
+    let classificationInfo = ClassificationInfo.shared
     let captureSession = AVCaptureSession()
     var videoDeviceInput: AVCaptureDeviceInput! // 전∙후면 변경 가능
     var photoOutput: AVCapturePhotoOutput = {
@@ -126,12 +127,6 @@ class CameraViewController: UIViewController {
 extension CameraViewController {
     // MARK: - Setup session and preview
     func setupSession() {
-        // 1. presentSetting
-        // 2. beginConfiguration
-        // 3. Add Video Input
-        // 4. Add Photo Output
-        // 5. commitConfiguration
-        
         captureSession.sessionPreset = .high   // 해상도 설정
         captureSession.beginConfiguration()
         
@@ -192,12 +187,12 @@ extension CameraViewController: AVCapturePhotoCaptureDelegate {
         // 이미지 라이브러리에 저장
         guard let image = UIImage(data: imageData) else { return }
         
+        classificationInfo.image = image
+        
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let imageClassificationVC = sb.instantiateViewController(identifier: "ImageClassificationViewController") as! ImageClassificationViewController
         imageClassificationVC.updateClassifications(for: image)
         imageClassificationVC.modalPresentationStyle = .fullScreen
         present(imageClassificationVC, animated: false, completion: nil)
-       
-        
     }
 }

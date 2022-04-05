@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E5A169A7F220177B5D825BD /* Pods_MilkGuide_MilkGuideUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8FE8D74097DE3D018A0E03 /* Pods_MilkGuide_MilkGuideUITests.framework */; };
 		4F037D892686AC6300CC2E0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F037D882686AC6300CC2E0A /* AppDelegate.swift */; };
 		4F037D8B2686AC6300CC2E0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F037D8A2686AC6300CC2E0A /* SceneDelegate.swift */; };
 		4F037D8D2686AC6300CC2E0A /* MilkDetectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F037D8C2686AC6300CC2E0A /* MilkDetectorViewController.swift */; };
@@ -24,11 +25,16 @@
 		4F374D6526872FF7007BA65C /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F374D6426872FF7007BA65C /* CGImagePropertyOrientation.swift */; };
 		4F45C5DE268A158E004706A8 /* THEHongchaLefthand.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FFF8429268A068000993E2D /* THEHongchaLefthand.ttf */; };
 		4F65919026877B280029C793 /* ClassificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F65918F26877B280029C793 /* ClassificationInfo.swift */; };
+		4F940A7E26DCD43B00E3B0A1 /* milk_cpu.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4F940A7D26DCD43B00E3B0A1 /* milk_cpu.mlmodel */; };
 		4FA26BA72695C46000B197FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F037D912686AC6400CC2E0A /* Assets.xcassets */; };
 		4FC34A50269573F8000A45B8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC34A4F269573F8000A45B8 /* SettingViewController.swift */; };
 		4FC34A5226957557000A45B8 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC34A5126957557000A45B8 /* Setting.storyboard */; };
+		4FDB5DB926B671EA003536C1 /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDB5DB826B671EA003536C1 /* NetworkAPI.swift */; };
 		4FE3CF5526903945004C258B /* milk_1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4FE3CF5426903945004C258B /* milk_1.mlmodel */; };
 		4FF2335D26984CBB0059EA20 /* milk_2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2335C26984CBB0059EA20 /* milk_2.mlmodel */; };
+		4FF2335F26985A970059EA20 /* my_network.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2335E26985A970059EA20 /* my_network.mlmodel */; };
+		53FBE12F00F9EDD351B9ADD9 /* Pods_MilkGuideTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B314495722F0CF9823F0142 /* Pods_MilkGuideTests.framework */; };
+		FDEDB4F5FE436C97A037B208 /* Pods_MilkGuide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0FF4B8D8AF473A318A3919 /* Pods_MilkGuide.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00DDDFBD6223EA37541289D1 /* Pods-MilkGuideTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MilkGuideTests.debug.xcconfig"; path = "Target Support Files/Pods-MilkGuideTests/Pods-MilkGuideTests.debug.xcconfig"; sourceTree = "<group>"; };
+		088F2D81B2EB6E817E6AA527 /* Pods-MilkGuide-MilkGuideUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MilkGuide-MilkGuideUITests.release.xcconfig"; path = "Target Support Files/Pods-MilkGuide-MilkGuideUITests/Pods-MilkGuide-MilkGuideUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1949B1FE262FEA0B1D4A45D9 /* Pods-MilkGuide-MilkGuideUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MilkGuide-MilkGuideUITests.debug.xcconfig"; path = "Target Support Files/Pods-MilkGuide-MilkGuideUITests/Pods-MilkGuide-MilkGuideUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B314495722F0CF9823F0142 /* Pods_MilkGuideTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MilkGuideTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F037D852686AC6300CC2E0A /* MilkGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MilkGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F037D882686AC6300CC2E0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F037D8A2686AC6300CC2E0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,11 +82,19 @@
 		4F374D6226872392007BA65C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		4F374D6426872FF7007BA65C /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
 		4F65918F26877B280029C793 /* ClassificationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationInfo.swift; sourceTree = "<group>"; };
+		4F940A7D26DCD43B00E3B0A1 /* milk_cpu.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = milk_cpu.mlmodel; sourceTree = "<group>"; };
 		4FC34A4F269573F8000A45B8 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		4FC34A5126957557000A45B8 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		4FDB5DB826B671EA003536C1 /* NetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
 		4FE3CF5426903945004C258B /* milk_1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = milk_1.mlmodel; sourceTree = "<group>"; };
 		4FF2335C26984CBB0059EA20 /* milk_2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = milk_2.mlmodel; sourceTree = "<group>"; };
+		4FF2335E26985A970059EA20 /* my_network.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = my_network.mlmodel; sourceTree = "<group>"; };
 		4FFF8429268A068000993E2D /* THEHongchaLefthand.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = THEHongchaLefthand.ttf; path = MilkGuide/Font/THEHongchaLefthand.ttf; sourceTree = SOURCE_ROOT; };
+		58F040343C72C8944F220569 /* Pods-MilkGuideTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MilkGuideTests.release.xcconfig"; path = "Target Support Files/Pods-MilkGuideTests/Pods-MilkGuideTests.release.xcconfig"; sourceTree = "<group>"; };
+		8E3D65CCA780D93BD5DE97AD /* Pods-MilkGuide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MilkGuide.debug.xcconfig"; path = "Target Support Files/Pods-MilkGuide/Pods-MilkGuide.debug.xcconfig"; sourceTree = "<group>"; };
+		CAE34684548488EF4B70BCDA /* Pods-MilkGuide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MilkGuide.release.xcconfig"; path = "Target Support Files/Pods-MilkGuide/Pods-MilkGuide.release.xcconfig"; sourceTree = "<group>"; };
+		DC0FF4B8D8AF473A318A3919 /* Pods_MilkGuide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MilkGuide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA8FE8D74097DE3D018A0E03 /* Pods_MilkGuide_MilkGuideUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MilkGuide_MilkGuideUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDEDB4F5FE436C97A037B208 /* Pods_MilkGuide.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53FBE12F00F9EDD351B9ADD9 /* Pods_MilkGuideTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E5A169A7F220177B5D825BD /* Pods_MilkGuide_MilkGuideUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +132,8 @@
 				4F037D9E2686AC6400CC2E0A /* MilkGuideTests */,
 				4F037DA92686AC6400CC2E0A /* MilkGuideUITests */,
 				4F037D862686AC6300CC2E0A /* Products */,
+				C65CC6465BEDBE14E2949FFD /* Pods */,
+				B5D2E2FFE56D9450E9510BBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,7 +153,6 @@
 				4F037D882686AC6300CC2E0A /* AppDelegate.swift */,
 				4F037D8A2686AC6300CC2E0A /* SceneDelegate.swift */,
 				4F037DBD2686B08B00CC2E0A /* MilkDetector */,
-				4F374D552686C9A9007BA65C /* Camera */,
 				4FC34A4E269573A5000A45B8 /* Setting */,
 				4F037DB82686AEFB00CC2E0A /* Font */,
 				4F037DBE2686C13700CC2E0A /* MainTabBarController.swift */,
@@ -170,14 +192,13 @@
 		4F037DBD2686B08B00CC2E0A /* MilkDetector */ = {
 			isa = PBXGroup;
 			children = (
+				4F374D552686C9A9007BA65C /* Camera */,
+				4FD4086826BA24EE00472682 /* CoreML */,
 				4F037D8E2686AC6300CC2E0A /* Main.storyboard */,
 				4F037D8C2686AC6300CC2E0A /* MilkDetectorViewController.swift */,
 				4F374D6026872197007BA65C /* ImageClassificationViewController.swift */,
 				4F374D6226872392007BA65C /* ResultViewController.swift */,
-				4F374D5E26871BF8007BA65C /* MilkClassifier.mlmodel */,
-				4FE3CF5426903945004C258B /* milk_1.mlmodel */,
-				4FF2335C26984CBB0059EA20 /* milk_2.mlmodel */,
-				4F374D6426872FF7007BA65C /* CGImagePropertyOrientation.swift */,
+				4FDB5DB826B671EA003536C1 /* NetworkAPI.swift */,
 				4F65918F26877B280029C793 /* ClassificationInfo.swift */,
 			);
 			path = MilkDetector;
@@ -202,6 +223,42 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
+		4FD4086826BA24EE00472682 /* CoreML */ = {
+			isa = PBXGroup;
+			children = (
+				4F374D6426872FF7007BA65C /* CGImagePropertyOrientation.swift */,
+				4F374D5E26871BF8007BA65C /* MilkClassifier.mlmodel */,
+				4FE3CF5426903945004C258B /* milk_1.mlmodel */,
+				4FF2335C26984CBB0059EA20 /* milk_2.mlmodel */,
+				4FF2335E26985A970059EA20 /* my_network.mlmodel */,
+				4F940A7D26DCD43B00E3B0A1 /* milk_cpu.mlmodel */,
+			);
+			path = CoreML;
+			sourceTree = "<group>";
+		};
+		B5D2E2FFE56D9450E9510BBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC0FF4B8D8AF473A318A3919 /* Pods_MilkGuide.framework */,
+				FA8FE8D74097DE3D018A0E03 /* Pods_MilkGuide_MilkGuideUITests.framework */,
+				3B314495722F0CF9823F0142 /* Pods_MilkGuideTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C65CC6465BEDBE14E2949FFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E3D65CCA780D93BD5DE97AD /* Pods-MilkGuide.debug.xcconfig */,
+				CAE34684548488EF4B70BCDA /* Pods-MilkGuide.release.xcconfig */,
+				1949B1FE262FEA0B1D4A45D9 /* Pods-MilkGuide-MilkGuideUITests.debug.xcconfig */,
+				088F2D81B2EB6E817E6AA527 /* Pods-MilkGuide-MilkGuideUITests.release.xcconfig */,
+				00DDDFBD6223EA37541289D1 /* Pods-MilkGuideTests.debug.xcconfig */,
+				58F040343C72C8944F220569 /* Pods-MilkGuideTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -209,9 +266,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F037DAF2686AC6400CC2E0A /* Build configuration list for PBXNativeTarget "MilkGuide" */;
 			buildPhases = (
+				B51EED89D9B51B0C811E7FB0 /* [CP] Check Pods Manifest.lock */,
 				4F037D812686AC6300CC2E0A /* Sources */,
 				4F037D822686AC6300CC2E0A /* Frameworks */,
 				4F037D832686AC6300CC2E0A /* Resources */,
+				DADEE458C0ED105EA0DE671A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -226,6 +285,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F037DB22686AC6400CC2E0A /* Build configuration list for PBXNativeTarget "MilkGuideTests" */;
 			buildPhases = (
+				01EB2C64574136B3DB8A4B92 /* [CP] Check Pods Manifest.lock */,
 				4F037D972686AC6400CC2E0A /* Sources */,
 				4F037D982686AC6400CC2E0A /* Frameworks */,
 				4F037D992686AC6400CC2E0A /* Resources */,
@@ -244,9 +304,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F037DB52686AC6400CC2E0A /* Build configuration list for PBXNativeTarget "MilkGuideUITests" */;
 			buildPhases = (
+				5754C5B41F30B2CCCB56CC56 /* [CP] Check Pods Manifest.lock */,
 				4F037DA22686AC6400CC2E0A /* Sources */,
 				4F037DA32686AC6400CC2E0A /* Frameworks */,
 				4F037DA42686AC6400CC2E0A /* Resources */,
+				725E55A05416DFF92550ED21 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -330,6 +392,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01EB2C64574136B3DB8A4B92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MilkGuideTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5754C5B41F30B2CCCB56CC56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MilkGuide-MilkGuideUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		725E55A05416DFF92550ED21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MilkGuide-MilkGuideUITests/Pods-MilkGuide-MilkGuideUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MilkGuide-MilkGuideUITests/Pods-MilkGuide-MilkGuideUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MilkGuide-MilkGuideUITests/Pods-MilkGuide-MilkGuideUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B51EED89D9B51B0C811E7FB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MilkGuide-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DADEE458C0ED105EA0DE671A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MilkGuide/Pods-MilkGuide-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MilkGuide/Pods-MilkGuide-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MilkGuide/Pods-MilkGuide-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4F037D812686AC6300CC2E0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -338,9 +503,11 @@
 				4F374D6126872197007BA65C /* ImageClassificationViewController.swift in Sources */,
 				4F374D5F26871BF8007BA65C /* MilkClassifier.mlmodel in Sources */,
 				4F037D8D2686AC6300CC2E0A /* MilkDetectorViewController.swift in Sources */,
+				4F940A7E26DCD43B00E3B0A1 /* milk_cpu.mlmodel in Sources */,
 				4FC34A50269573F8000A45B8 /* SettingViewController.swift in Sources */,
 				4F374D532686C505007BA65C /* CameraViewController.swift in Sources */,
 				4F037D892686AC6300CC2E0A /* AppDelegate.swift in Sources */,
+				4FF2335F26985A970059EA20 /* my_network.mlmodel in Sources */,
 				4FF2335D26984CBB0059EA20 /* milk_2.mlmodel in Sources */,
 				4F037DBF2686C13700CC2E0A /* MainTabBarController.swift in Sources */,
 				4F374D6526872FF7007BA65C /* CGImagePropertyOrientation.swift in Sources */,
@@ -349,6 +516,7 @@
 				4F374D572686C9D1007BA65C /* PreviewView.swift in Sources */,
 				4F374D6326872392007BA65C /* ResultViewController.swift in Sources */,
 				4FE3CF5526903945004C258B /* milk_1.mlmodel in Sources */,
+				4FDB5DB926B671EA003536C1 /* NetworkAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +689,7 @@
 		};
 		4F037DB02686AC6400CC2E0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E3D65CCA780D93BD5DE97AD /* Pods-MilkGuide.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -540,6 +709,7 @@
 		};
 		4F037DB12686AC6400CC2E0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAE34684548488EF4B70BCDA /* Pods-MilkGuide.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -559,6 +729,7 @@
 		};
 		4F037DB32686AC6400CC2E0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00DDDFBD6223EA37541289D1 /* Pods-MilkGuideTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -581,6 +752,7 @@
 		};
 		4F037DB42686AC6400CC2E0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58F040343C72C8944F220569 /* Pods-MilkGuideTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -603,6 +775,7 @@
 		};
 		4F037DB62686AC6400CC2E0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1949B1FE262FEA0B1D4A45D9 /* Pods-MilkGuide-MilkGuideUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -623,6 +796,7 @@
 		};
 		4F037DB72686AC6400CC2E0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 088F2D81B2EB6E817E6AA527 /* Pods-MilkGuide-MilkGuideUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

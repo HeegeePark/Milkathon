@@ -14,7 +14,7 @@ import Alamofire
 class networkAPI {
 
     static func requestClassification(_ image: UIImage) -> String {
-        let url = "http://57e8bb56e407.ngrok.io"
+        let url = "http://e7092a51d56d.ngrok.io"
         let imageData = image.jpegData(compressionQuality: 0.5)!
         var prediction = ""
         

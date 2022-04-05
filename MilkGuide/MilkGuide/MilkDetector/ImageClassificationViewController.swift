@@ -11,61 +11,66 @@ import Vision
 import ImageIO
 
 class ImageClassificationViewController: UIViewController {
-    /*
-    0 : 딸기우유
-    1 : 바나나우유
-    2 : 초코우유
-    3 : 커피우유
-    4 : 흰우유
-    */
-    var image: UIImage?
-    var result: String = ""
+    let classificationInfo = ClassificationInfo.shared
+    typealias UpdateResultCompletion = (ClassificationInfo) -> Void
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
-    // 분류 결과 update
-    func updateResult(_ prediction: String) {
-        switch prediction {
-        case "0":
-            self.result = "딸기우유"
-        case "1":
-            self.result = "바나나우유"
-        case "2":
-            self.result = "초코우유"
-        case "3":
-            self.result = "커피우유"
-        case "4":
-            self.result = "흰우유"
-        default:
-            self.result = prediction
+    // MARK: - Image Classification
+    /// - Tag: MLModel Setup
+    lazy var classificationRequest: VNCoreMLRequest = {
+        do {
+            let model = try VNCoreMLModel(for: milk_cpu().model)
+            
+            let request = VNCoreMLRequest(model: model, completionHandler: { [weak self] request, error in
+                self?.ProcessClassifications(for: request, error: error)
+            })
+            return request
+        } catch {
+            fatalError("Failed to load Vision ML model: \(error)")
         }
+    }()
+    
+    /// - Tag: PerformRequests
+    func updateClassifications(for image: UIImage) {
+        self.classificationInfo.image = image
+        let orientation = CGImagePropertyOrientation(image.imageOrientation)
+        guard let ciImage = CIImage(image: image) else { fatalError("Unable to create \(CIImage.self) form \(image)") }
         
+        DispatchQueue.global(qos: .userInitiated).async {
+            let handler = VNImageRequestHandler(ciImage: ciImage, orientation: orientation)
+            do {
+                try handler.perform([self.classificationRequest])       // handler로 model에게 request
+            } catch {
+                print("Failed to perform classification.\n\(error.localizedDescription)")
+            }
+        }
+    }
+    
+    /// - Tag: ProcessClassifications (분류 결과에 따른 UI 업뎃)
+    func ProcessClassifications(for request: VNRequest, error: Error?) {
         DispatchQueue.main.async {
             let resultVC = self.storyboard?.instantiateViewController(identifier: "ResultViewController") as! ResultViewController
-            let classificationInfo = ClassificationInfo(image: self.image!, result: self.result)
-            resultVC.viewModel.update(model: classificationInfo)
+            guard let results = request.results else {
+                self.classificationInfo.prediction = "분류 불가"
+                self.present(resultVC, animated: false, completion: nil)
+                return
+            }
+            let classifications = results as! [VNClassificationObservation]
+            if classifications.isEmpty {
+                self.classificationInfo.prediction = "알 수 없음"
+            } else {
+                let topClassification = classifications.prefix(1)
+                let prediction = topClassification.first?.identifier
+                self.classificationInfo.prediction = prediction
+            }
+            resultVC.viewModel.update(model: self.classificationInfo)
             resultVC.modalPresentationStyle = .fullScreen
-            
             self.present(resultVC, animated: false, completion: nil)
         }
-        
-    }
-    
-    // CoreML로 우유 분류하기
-    func requestByCoreML(_ image: UIImage) {
-        self.image = image
-        let classification = ClassificationByCoreML()
-        classification.updateClassifications(for: image)
-        let prediction = classification.prediction
-    }
-    
-    // 네트워크 통신을 통한 우유 분류하기
-    func requestByNetwork(_ image: UIImage) {
-        self.image = image
-//        self.updateResult()
-        
     }
 }
+
+

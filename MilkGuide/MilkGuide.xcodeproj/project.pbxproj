@@ -29,7 +29,6 @@
 		4FA26BA72695C46000B197FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F037D912686AC6400CC2E0A /* Assets.xcassets */; };
 		4FC34A50269573F8000A45B8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC34A4F269573F8000A45B8 /* SettingViewController.swift */; };
 		4FC34A5226957557000A45B8 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC34A5126957557000A45B8 /* Setting.storyboard */; };
-		4FDB5DB926B671EA003536C1 /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDB5DB826B671EA003536C1 /* NetworkAPI.swift */; };
 		4FE3CF5526903945004C258B /* milk_1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4FE3CF5426903945004C258B /* milk_1.mlmodel */; };
 		4FF2335D26984CBB0059EA20 /* milk_2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2335C26984CBB0059EA20 /* milk_2.mlmodel */; };
 		4FF2335F26985A970059EA20 /* my_network.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2335E26985A970059EA20 /* my_network.mlmodel */; };
@@ -85,7 +84,6 @@
 		4F940A7D26DCD43B00E3B0A1 /* milk_cpu.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = milk_cpu.mlmodel; sourceTree = "<group>"; };
 		4FC34A4F269573F8000A45B8 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		4FC34A5126957557000A45B8 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
-		4FDB5DB826B671EA003536C1 /* NetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
 		4FE3CF5426903945004C258B /* milk_1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = milk_1.mlmodel; sourceTree = "<group>"; };
 		4FF2335C26984CBB0059EA20 /* milk_2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = milk_2.mlmodel; sourceTree = "<group>"; };
 		4FF2335E26985A970059EA20 /* my_network.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = my_network.mlmodel; sourceTree = "<group>"; };
@@ -198,7 +196,6 @@
 				4F037D8C2686AC6300CC2E0A /* MilkDetectorViewController.swift */,
 				4F374D6026872197007BA65C /* ImageClassificationViewController.swift */,
 				4F374D6226872392007BA65C /* ResultViewController.swift */,
-				4FDB5DB826B671EA003536C1 /* NetworkAPI.swift */,
 				4F65918F26877B280029C793 /* ClassificationInfo.swift */,
 			);
 			path = MilkDetector;
@@ -516,7 +513,6 @@
 				4F374D572686C9D1007BA65C /* PreviewView.swift in Sources */,
 				4F374D6326872392007BA65C /* ResultViewController.swift in Sources */,
 				4FE3CF5526903945004C258B /* milk_1.mlmodel in Sources */,
-				4FDB5DB926B671EA003536C1 /* NetworkAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

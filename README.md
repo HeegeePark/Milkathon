@@ -19,6 +19,11 @@
   - 앱스토어 리뷰 남기러 가기
   - 뷰에 따른 오디오 안내 기능 on/off (추가예정)
 
+
+### 이슈
+- [해결한 이슈들](https://github.com/Deep-Dive-to-App/Milkathon/issues?q=is%3Aissue+is%3Aclosed)
+- [해결하지 못한 이슈들](https://github.com/Deep-Dive-to-App/Milkathon/issues?q=is%3Aopen+is%3Aissue)
+
 ---
 
 # 제 1회 DDA 해커톤 : Milkathon 2021.06.26(토)

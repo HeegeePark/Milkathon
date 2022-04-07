@@ -19,8 +19,10 @@
   - 앱스토어 리뷰 남기러 가기
   - 뷰에 따른 오디오 안내 기능 on/off (추가예정)
 
-### ++
-- **기존 CoreML로 변환한 모바일 딥러닝을 탑재한 형태에서 AI를 탑재한 Flask 서버와 통신하는 네트워크 기능 추가중** 
+
+### 이슈
+- [해결한 이슈들](https://github.com/Deep-Dive-to-App/Milkathon/issues?q=is%3Aissue+is%3Aclosed)
+- [해결하지 못한 이슈들](https://github.com/Deep-Dive-to-App/Milkathon/issues?q=is%3Aopen+is%3Aissue)
 
 ---
 

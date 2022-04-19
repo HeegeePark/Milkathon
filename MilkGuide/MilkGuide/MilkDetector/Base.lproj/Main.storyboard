@@ -131,14 +131,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gar-mW-kfh">
-                                <rect key="frame" x="75" y="171" width="240" height="240"/>
+                                <rect key="frame" x="75" y="154" width="240" height="240"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="4y6-Ts-Y23"/>
-                                    <constraint firstAttribute="height" constant="240" id="gU0-y7-4fG"/>
+                                    <constraint firstAttribute="height" priority="750" constant="240" id="gU0-y7-4fG"/>
+                                    <constraint firstAttribute="width" secondItem="gar-mW-kfh" secondAttribute="height" multiplier="1:1" id="gt2-2Z-le1"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="바나나우유" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QwV-Fc-bzF">
+                                <rect key="frame" x="108.33333333333333" y="424" width="173.66666666666669" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="j0k-ba-RON"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="THEHongchaLefthand" family="THEHongcha Lefthand" pointSize="50"/>
+                                <color key="textColor" red="0.42223021389999998" green="0.2097753882" blue="0.023445226249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yiI-De-fZA">
-                                <rect key="frame" x="104" y="654" width="182" height="66"/>
+                                <rect key="frame" x="104" y="514" width="182" height="66"/>
                                 <color key="backgroundColor" red="0.73605054619999999" green="0.60542649029999995" blue="0.5097871423" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="EJ9-yF-M9O"/>
@@ -152,25 +161,19 @@
                                     <action selector="homeButtonTapped:" destination="PDc-oV-p82" eventType="touchUpInside" id="a2k-Hr-2ck"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="바나나우유" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QwV-Fc-bzF">
-                                <rect key="frame" x="108.33333333333333" y="441" width="173.66666666666669" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="j0k-ba-RON"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="THEHongchaLefthand" family="THEHongcha Lefthand" pointSize="50"/>
-                                <color key="textColor" red="0.42223021389999998" green="0.2097753882" blue="0.023445226249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5qy-s4-Z7N"/>
                         <color key="backgroundColor" red="0.9995927215" green="0.97318893669999995" blue="0.93332856890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="5qy-s4-Z7N" firstAttribute="trailing" secondItem="gar-mW-kfh" secondAttribute="trailing" constant="75" id="Bd6-y6-Ocm"/>
                             <constraint firstItem="QwV-Fc-bzF" firstAttribute="top" secondItem="gar-mW-kfh" secondAttribute="bottom" constant="30" id="BvV-s2-aPX"/>
-                            <constraint firstItem="5qy-s4-Z7N" firstAttribute="bottom" secondItem="yiI-De-fZA" secondAttribute="bottom" constant="90" id="DZr-TV-VXG"/>
+                            <constraint firstItem="5qy-s4-Z7N" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="yiI-De-fZA" secondAttribute="bottom" constant="30" id="DZr-TV-VXG"/>
                             <constraint firstItem="yiI-De-fZA" firstAttribute="centerX" secondItem="5qy-s4-Z7N" secondAttribute="centerX" id="L6p-b9-Rdd"/>
+                            <constraint firstItem="gar-mW-kfh" firstAttribute="leading" secondItem="5qy-s4-Z7N" secondAttribute="leading" constant="75" id="dnu-L4-83b"/>
                             <constraint firstItem="gar-mW-kfh" firstAttribute="centerX" secondItem="5qy-s4-Z7N" secondAttribute="centerX" id="eRY-vi-Whc"/>
                             <constraint firstItem="QwV-Fc-bzF" firstAttribute="centerX" secondItem="gar-mW-kfh" secondAttribute="centerX" id="kE1-oO-w5Z"/>
-                            <constraint firstItem="gar-mW-kfh" firstAttribute="top" secondItem="5qy-s4-Z7N" secondAttribute="top" constant="127" id="vqR-8h-krL"/>
+                            <constraint firstItem="yiI-De-fZA" firstAttribute="top" secondItem="QwV-Fc-bzF" secondAttribute="bottom" priority="750" constant="30" id="ow9-QA-Dpu"/>
+                            <constraint firstItem="gar-mW-kfh" firstAttribute="top" secondItem="5qy-s4-Z7N" secondAttribute="top" constant="110" id="vqR-8h-krL"/>
                         </constraints>
                     </view>
                     <connections>

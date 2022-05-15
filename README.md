@@ -6,7 +6,7 @@
 
 우유 종류를 먹어보지 않으면 알기 어려운 시각장애인 분들을 위하여, 사진으로 손쉽게 우유 종류를 알려주는 우유 Detecting 앱입니다. 🌝
 
-<img src="https://user-images.githubusercontent.com/47033052/125451223-2816796c-a711-4493-a14f-d83307c85013.PNG" width="20%" height="20%"/>  <img src="https://user-images.githubusercontent.com/47033052/125451490-3ea6ee3a-a1b0-42a9-a031-376b19d5e293.png" width="20%" height="20%" /> <img src="https://user-images.githubusercontent.com/47033052/125451210-d07640a7-7dd9-41e3-8942-97374b4943f0.PNG" width="20%" height="20%" /> <img src="https://user-images.githubusercontent.com/47033052/125451235-883518b9-6fec-4e3e-8e4d-0c66945ee638.PNG" width="20%" height="20%" /> 
+<img src="https://user-images.githubusercontent.com/47033052/168480869-0ca54bad-221f-41df-9bd2-06c916dfba74.png" width="20%" height="20%"/>  <img src="https://user-images.githubusercontent.com/47033052/168480872-b359ab7b-c71a-40eb-a66b-6f0ea14b31b5.png" width="20%" height="20%" /> <img src="https://user-images.githubusercontent.com/47033052/168480873-cc133b61-9b39-4a79-a2f4-5234bea235c7.png" width="20%" height="20%" /> <img src="https://user-images.githubusercontent.com/47033052/168480876-9d22cbc0-038c-4710-8b67-bc04a38ef051.png" width="20%" height="20%" /> 
 
 ### 주요 기능
 
